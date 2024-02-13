@@ -1,0 +1,53 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url(rsc/54efaae4409a928b1f4929e1bebefa11.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.text, .ask, .yes, .no {
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.yes, .no {
+    width: 80%;
+    justify-self: center;
+}
+
+.gif {
+    text-align: center;
+    height: 33vh;
+}
+
+.gif img {
+    height: 100%;
+}
+
+@media (min-width: 600px) {
+    .desktop {
+        display: flex;
+        justify-content: center;
+        background: url(rsc/happy-valentines-day-with-paper-hearts-and-copy-space-on-red-background-vector.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .wrapper {
+        width: 25vw;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello :3</title>
+</head>
+
+<body>
+    <div class="desktop">
+        <div class="wrapper">
+            <div class="gif">
+                <img src="rsc/sonic-default-dance.gif" alt="" id="char">
+            </div>
+            <div class="site">
+                <div class="content">
+                    <div class="top">
+                        <img class="text" src="rsc/You-make-my-heart-go-super-13-02-2024.png" id="text">
+                        <img class="ask" src="rsc/Be-my-valentine-13-02-2024.png" alt="">
+                    </div>
+                    <div class="options">
+                        <img class="yes" src="rsc/yes.png"
+                            onclick="window.location='https://media.tenor.com/BwArbEoCbncAAAAM/happy-dance-cat.gif'">
+                        <img class="no" src="rsc/no.png" onclick="change()">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+    <script>
+
+
+        let options = [
+            ["rsc/You-make-my-heart-go-super-13-02-2024.png", "rsc/sonic-default-dance.gif"],
+            ["rsc/You-make-my-tails-spin-13-02-2024.png", "rsc/tails-tails-sonic.gif"],
+            ["rsc/You-shine-brighter-than-the-ma-13-02-2024.png", "rsc/knuckles-dancing.gif"],
+            ["rsc/I-can-t-chaos-control-my-feeli-13-02-2024.png", "rsc/shadow.gif"],
+            ["rsc/My-love-for-you-is-my-ultimate-13-02-2024.png", "rsc/dr-eggman-eggman.gif"],
+            ["rsc/I-piko-piko-pick-you-13-02-2024.png", "rsc/amy-rose-amy.gif"],
+        ];
+
+        function change() {
+            let rnd = Math.floor(Math.random() * 6);
+
+            document.getElementById("char").src = options[rnd][1];
+            document.getElementById("text").src = options[rnd][0];
+
+            console.log(rnd);
+        }
+    </script>
+</body>
+
+</html>
